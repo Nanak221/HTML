@@ -1,0 +1,227 @@
+html {
+	background-color: #f3f4f6;
+}
+
+body {
+	font-family: "Avenir Next", sans-serif;
+}
+
+a {
+	color:gray;
+}
+
+header {
+	height: 65px;
+	width: 100%;
+	background-color: white;
+	position: fixed;
+	top: 0;
+	z-index: 10;
+}
+
+.header_inner {
+	position: relative;
+}
+
+a.logo {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+a.logo:hover {
+	opacity: 0.8;
+}
+
+a.logo img {
+	height: 65px;
+	width: auto;
+}
+
+.header_menu {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	height: 65px;
+}
+
+.header-left a{
+  padding: 0 5px;
+
+ }
+
+article {
+	display: flex;
+	justify-content: space-between;
+	margin: 143px auto 0 auto;
+	width: 100%;
+	max-width: 1080px;
+}
+
+.top_main {
+	width: 816px;
+}
+
+.top_side {
+	width: 238px;
+}
+
+.top_main table.tbl01 th,
+.top_main table.tbl01 td {
+	text-align: left;
+}
+
+.top_main table.tbl01 th {
+	width: 70%;
+	background: white;
+}
+
+.top_main table.tbl02 th,
+.top_main table.tbl02 td {
+	text-align: left;
+}
+
+.top_main table.tbl02 th {
+	width: 30%;
+	background: #ddd;
+}
+
+/* ここからヘッダーのリンク部分 */
+.header-link {
+	position: relative;
+	display: inline-block;
+	height: 60px;
+	width: 100px;
+	border: solid 0;
+	background-color:white;
+}
+
+.header-link:hover {
+	background-color:#EEEEEE;
+}
+
+.header-link a {
+    position: absolute;
+    top:  0;
+    left: 0;
+    width: 100%;
+	height: 100%;
+}
+
+.header-link a:link{
+	color: black;
+}
+
+.header-link a:visited{
+	color: black;
+}
+/* ここまでヘッダーのリンク部分 */
+
+/* ここから求人情報テーブルのtable要素 */
+.job-overview {
+	width:200px;
+	background-color: yellow;
+}
+
+.job-overview tr {
+	display: block;
+	float: left;
+}
+
+.job-overview th td {
+	display: block;
+}
+
+.job-overview table {
+	border: solid 2px black;
+}
+/* ここまで求人情報テーブルのtable要素 */
+
+/* ここからHeaderのdiv要素 */
+.navHeader {
+	background-color:rgba(0,0,0,0.15);
+	padding:13px 0px 13px 40%;
+}
+
+.box1 {
+	display:inline-block;
+	padding: 10px;
+	margin-right: 20px;
+	background-color: white;
+	color: navy;
+    border: solid 3px navy;
+    border-radius: 5px;
+}
+
+.box2 {
+	display:inline-block;
+	padding: 10px;
+	margin-right: 20px;
+	background-color: white;
+	color: orange;
+    border: solid 3px orange;
+    border-radius: 5px;
+}
+
+.box3 {
+	display:inline-block;
+	padding: 10px;
+	margin-right: 20px;
+	background-color: white;
+	color: navy;
+    border: solid 3px navy;
+    border-radius: 5px;
+}
+
+.box4 {
+	display:inline-block;
+	padding: 10px;
+	margin-right: 20px;
+	background-color: navy;
+	color: white;
+    border: solid 3px navy;
+    border-radius: 5px;
+}
+/* ここまでHeaderのdiv要素 */
+
+.box5 {
+	height:10px;
+	width:150px;
+	font-size: 12px;
+	text-align: center;
+    border: solid 3px;
+    border-radius: 5px;
+}
+
+
+.box5 span{
+	color:red;
+}
+
+.nav {
+    display: table;
+    width: 90%;
+    background: #FFF;
+}
+.nav__item {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.nav__item + .nav__item {
+    border-left: 1px solid #CCC;
+}
+.nav__item a {
+    display: block;
+    padding: 15px 0;
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.my_table span{
+	color: #CCCCCC
+	font-size: 10px;
+}
