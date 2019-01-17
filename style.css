@@ -1,5 +1,5 @@
 html {
-	background-color: #f3f4f6;
+	background-color: #ddd;
 }
 
 body {
@@ -7,7 +7,7 @@ body {
 }
 
 a {
-	color:gray;
+	color:#666;
 }
 
 header {
@@ -35,7 +35,7 @@ a.logo:hover {
 }
 
 a.logo img {
-	height: 65px;
+	height: 50px;
 	width: auto;
 }
 
@@ -60,7 +60,7 @@ article {
 }
 
 .top_main {
-	width: 816px;
+	width: 900px;
 }
 
 .top_side {
@@ -91,22 +91,21 @@ article {
 .header-link {
 	position: relative;
 	display: inline-block;
-	height: 60px;
-	width: 100px;
-	border: solid 0;
+	height: 50px;
+	width: 80px;
 	background-color:white;
 }
 
 .header-link:hover {
-	background-color:#EEEEEE;
+	background-color:#666;
 }
 
 .header-link a {
     position: absolute;
-    top:  0;
+    top: 0;
     left: 0;
-    width: 100%;
-	height: 100%;
+	text-align: center;
+	display: block;
 }
 
 .header-link a:link{
@@ -121,7 +120,7 @@ article {
 /* ここから求人情報テーブルのtable要素 */
 .job-overview {
 	width:200px;
-	background-color: yellow;
+	background-color:white;
 }
 
 .job-overview tr {
@@ -140,8 +139,8 @@ article {
 
 /* ここからHeaderのdiv要素 */
 .navHeader {
-	background-color:rgba(0,0,0,0.15);
-	padding:13px 0px 13px 40%;
+	background-color:rgba(0,0,0,0.10);
+	padding:10px 0px 10px 40%;
 }
 
 .box1 {
@@ -150,9 +149,14 @@ article {
 	margin-right: 20px;
 	background-color: white;
 	color: navy;
-    border: solid 3px navy;
+    border: solid 1px navy;
     border-radius: 5px;
 }
+
+.box1:hover {
+    background-color:navy;
+		color: white;
+    }
 
 .box2 {
 	display:inline-block;
@@ -160,9 +164,15 @@ article {
 	margin-right: 20px;
 	background-color: white;
 	color: orange;
-    border: solid 3px orange;
+    border: solid 1px orange;
     border-radius: 5px;
 }
+
+.box2:hover {
+    background-color:orange;
+		color: white;
+    }
+
 
 .box3 {
 	display:inline-block;
@@ -170,9 +180,15 @@ article {
 	margin-right: 20px;
 	background-color: white;
 	color: navy;
-    border: solid 3px navy;
+    border: solid 1px navy;
     border-radius: 5px;
 }
+
+.box3:hover {
+    background-color:navy;
+		color: white;
+    }
+
 
 .box4 {
 	display:inline-block;
@@ -180,9 +196,15 @@ article {
 	margin-right: 20px;
 	background-color: navy;
 	color: white;
-    border: solid 3px navy;
+    border: solid 1px navy;
     border-radius: 5px;
 }
+
+.box4:hover {
+    opacity: 0.8;
+    }
+
+
 /* ここまでHeaderのdiv要素 */
 
 .box5 {
@@ -190,38 +212,105 @@ article {
 	width:150px;
 	font-size: 12px;
 	text-align: center;
-    border: solid 3px;
+    border: solid 0px;
     border-radius: 5px;
 }
 
+.top_main_a{
+	background-color:white;
+}
 
-.box5 span{
-	color:red;
+.top_main_a_logo img{
+	height:40px;
+	padding:10px;
+	margin:10px ;
+	float:left;
+	border:1px solid white;
+
+}
+
+.top_main_b {
+	background-color:white;
+  margin:0px;
+	padding:20px;
+	font-size:12px;
+	color:#475669;
+}
+
+.top_main_c {
+	background-color:white;
+	margin:5px;
+	padding:5px;
+	font-size:15px;
+	color:#475669;
+}
+
+.top_main_d {
+	background-color:white;
+	margin:10px 10px 10px 300px;
+  padding:10px;
+  font-size:9px;
+	display:inline-block;
+	color:black;
 }
 
 .nav {
-    display: table;
-    width: 90%;
-    background: #FFF;
+	display: flex;
 }
+
 .nav__item {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
+  list-style-type: none;
+  background-color: #fff;
+  color: #000;
+  flex-grow: 1;
+  text-align: center;
+	border-left: 1px solid #000;
 }
 
-.nav__item + .nav__item {
-    border-left: 1px solid #CCC;
-}
-.nav__item a {
-    display: block;
-    padding: 15px 0;
-    color: #666;
-    text-decoration: none;
-    font-size: 14px;
+
+.main_dl{
+	width: 800px;
 }
 
-.my_table span{
-	color: #CCCCCC
-	font-size: 10px;
+dl,
+dt,
+dd {
+  box-sizing: border-box;
+}
+
+dl {
+  background: #eee;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+}
+dt,
+dd {
+  padding: 10px 10px 0 10px;
+  border-top: 1px solid #ccc;
+	font-size:9px;
+}
+dt {
+  width: 40%;
+  float: left;
+}
+dd {
+  background: #fff;
+  margin-left: 40%;
+  padding-bottom: 10px;
+  border-left: 1px solid #ccc;
+}
+dd:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+
+
+.label {
+    font-size:10px;
+    color: #666666;
+   margin-bottom: .5rem;
+   font-weight: bold;
 }
